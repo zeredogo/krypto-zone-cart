@@ -31,8 +31,8 @@ const reducer = (state, action) => {
         const {total, amount} = state.cart.reduce(
             (cartTotal, CartItem) => {
                 const {price, amount} = CartItem
-                 console.log(price, amount)
-                return cartTotal 
+                 console.log(price, amount);
+                return cartTotal;
             },
             {
             total: 0,
