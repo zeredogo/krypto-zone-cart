@@ -27,10 +27,10 @@ const reducer = (state, action) => {
         }).filter((CartItem) => CartItem.amount !== 0)
         return {...state, cart: tempCart}
     }
-    if(action.type === 'GET_TOTALs') {
-        const {total, amount} = state.cart.reduce(
-            (cartTotal, CartItem) => {
-                const {price, amount} = CartItem
+    if(action.type === 'GET_TOTALS') {
+        const { total, amount } = state.cart.reduce(
+            ( cartTotal, cartItem ) => {
+                const { price, amount } = cartItem
                  console.log(price, amount);
                 return cartTotal;
             },
