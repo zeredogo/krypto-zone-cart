@@ -53,6 +53,15 @@ const reducer = (state, action) => {
     if (action.type === 'DISPLAY_ITEMS' ) {
         return {...state, cart: action.payload, loading: false }
     }
+    if (action.type === 'TOGGLR_AMOUNT') {
+        let tempCart = state.cart.map((cartItem) => {
+            if(cartItem.id === action.payload.id) {
+
+            }
+            return cartItem
+        });
+        return {...state, cart: tempCart}
+    }
 
     return state
 }
