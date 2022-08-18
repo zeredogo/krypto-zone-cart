@@ -21,6 +21,7 @@ function App() {
     <main>
     <Navbar />
     <CartContainer />
+    <p className="footer"><small>Krypto Zone &copy; 2022</small></p>
     </main>
   )
 }

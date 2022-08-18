@@ -43,7 +43,7 @@ const reducer = (state, action) => {
         }
         )
 
-       // total = parseFloat(total.toFixed(2))
+        //total = parseFloat(total.toFixed(2))
 
         return {...state, total, amount}
     }
@@ -68,7 +68,7 @@ const reducer = (state, action) => {
         return {...state, cart: tempCart}
     }
 
-    return state
+    throw new Error('no matching action type')
 }
 
 export default reducer;

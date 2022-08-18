@@ -266,4 +266,12 @@ hr {
   background: var(--clr-grey-5);
   border-color: transparent;
   border-width: 0.25px;
+
+}
+.footer{
+  text-align: center;
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
